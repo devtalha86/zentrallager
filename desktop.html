@@ -7,13 +7,57 @@
     <title>Jacken</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/desktop.css">
     
 </head>
 <body onload="preloadImages()">
 
     <div class="zentrallager">
         <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="cartAnd-miniCart">
+                        <div class="float-right">
+                            <a href="#" id="cart"><span class="lodur-icon-cart-thin"></span> <span class="badge">(3)</span></a>
+                        </div>
+
+                        <div class="shopping-cart">
+                            <div class="shopping-cart-header">
+                                <span class="lodur-icon-cart-thin"></span><span class="badge">3</span>
+                                <div class="shopping-cart-total">
+                                <span class="lighter-text">Total:</span>
+                                <span class="main-color-text">$2,229.97</span>
+                                </div>
+                            </div> <!--end shopping-cart-header -->
+                        
+                            <ul class="shopping-cart-items">
+                                <li class="clearfix">
+                                <img src="assets/image/p5.jpg" alt="item1" />
+                                <span class="item-name">Sony DSC-RX100M III</span>
+                                <span class="item-price">$849.99</span>
+                                <span class="item-quantity">Quantity: 01</span>
+                                </li>
+                        
+                                <li class="clearfix">
+                                <img src="assets/image/p3.jpg" alt="item1" />
+                                <span class="item-name">KS Automatic Mechanic...</span>
+                                <span class="item-price">$1,249.99</span>
+                                <span class="item-quantity">Quantity: 01</span>
+                                </li>
+                        
+                                <li class="clearfix">
+                                <img src="assets/image/p1.jpg" alt="item1" />
+                                <span class="item-name">Kindle, 6" Glare-Free To...</span>
+                                <span class="item-price">$129.99</span>
+                                <span class="item-quantity">Quantity: 01</span>
+                                </li>
+                            </ul>
+                        
+                            <a href="#" class="button">Checkout</a>
+                            </div> <!--end shopping-cart -->
+                    </div>
+                </div>
+            </div>
             <div id="selectedImage" class="row product-list">
                 <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
                     <div class="zen-product" data-toggle="modal" data-target="#exampleModal">    
@@ -66,7 +110,7 @@
                 <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
                     <div class="zen-product" data-toggle="modal" data-target="#exampleModal">
                         <div id="image" class="prod-img-container">
-                            <a href="#"><img id="theImage" class="img-fluid" width="240" src="assets/image/car-big-1.jpg" alt=""></a>
+                            <a href="#"><img id="theImage" class="img-fluid" width="240" src="assets/image/p1.jpg" alt=""></a>
                         </div>
                         <div class="prod-info prod-info-onHover onHover-info">
                             <div class="float-left">
@@ -79,10 +123,10 @@
                             </div>
                             <div id="thumbs" class="mouse-hover-info">
                                 <ul>
-                                    <li><a class="active" href="#"><img src="assets/image/car-tn-1.jpg" width="60" alt="Car 1" onmouseover="swapImage(0);" onmouseout="swapImage(0);" /></a></li>
-                                    <li><a href="#"><img src="assets/image/car-tn-2.jpg" width="60" alt="Car 2" onmouseover="swapImage(1);" onmouseout="swapImage(0);" /></a></li>
-                                    <li><a href="#"><img src="assets/image/car-tn-3.jpg" width="60" alt="Car 3" onmouseover="swapImage(2);" onmouseout="swapImage(0);" /></a></li>
-                                    <li><a href="#"><img src="assets/image/car-tn-4.jpg" width="60" alt="Car 4" onmouseover="swapImage(3);" onmouseout="swapImage(0);" /></a></li>
+                                    <li><a href="#" class="active"><img src="assets/image/p1.jpg" width="60" alt="Car 1" onmouseover="swapImage(0);"  /></a></li>
+                                    <li><a href="#"><img src="assets/image/p2.jpg" width="60" alt="Car 2" onmouseover="swapImage(1);"  /></a></li>
+                                    <li><a href="#"><img src="assets/image/p3.jpg" width="60" alt="Car 3" onmouseover="swapImage(2);"  /></a></li>
+                                    <li><a href="#"><img src="assets/image/p5.jpg" width="60" alt="Car 4" onmouseover="swapImage(3);"  /></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -289,82 +333,82 @@
 	<div class="modal right fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">naketano</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button>
-                </div>
-                <div class="modal-body">
-                    <div class="zentrallager">
-                            <div class="top-bar">
-                                <a href="#">
-                                    <span class="lodur-icon-arrow-thin-left"></span>
-                                </a>
-                                <h1>naketano</h1>
-                                
-                            </div>
-                            <div class="container-fluid">
-                                <div class="row product-details">
-                                    <div class="col">
-                                        <div class="prod-img-container">
-                                            <!-- <img class="img-fluid" src="assets/image/product.png" alt=""> -->
-                                            <div class="xzoom-container">
-                                                <img class="xzoom" id="xzoom-default" src="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/preview/01_b_car.jpg" xoriginal="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/original/01_b_car.jpg" />
-                                                <div class="xzoom-thumbs">
-                                                    <a href="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/original/01_b_car.jpg"><img class="xzoom-gallery" width="80" src="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/thumbs/01_b_car.jpg"  xpreview="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/preview/01_b_car.jpg" title="The description goes here"></a>
-                                                    
-                                                    <a href="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/original/02_o_car.jpg"><img class="xzoom-gallery" width="80" src="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/preview/02_o_car.jpg" title="The description goes here"></a>
-                                                    
-                                                    <a href="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/original/03_r_car.jpg"><img class="xzoom-gallery" width="80" src="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/preview/03_r_car.jpg" title="The description goes here"></a>
-                                                    
-                                                    <a href="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/original/04_g_car.jpg"><img class="xzoom-gallery" width="80" src="http://www.jqueryscript.net/demo/Feature-rich-Product-Gallery-With-Image-Zoom-xZoom/images/gallery/preview/04_g_car.jpg" title="The description goes here"></a>
-                                                </div>
-                                            </div>
+                </div> -->
+                <div class="modal-body prodDetails-sidebar">
+            
+                    <div class="top-bar">
+                        
+                        <h1>naketano</h1>
+                        
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row product-details">
+                            <div class="col">
+                                <div class="prod-img-container">
+                                    <!-- <img class="img-fluid" src="assets/image/product.png" alt=""> -->
+                                    <div class="xzoom-container">
+                                        <img class="xzoom" id="xzoom-default" src="assets/image/p1.jpg" xoriginal="assets/image/p1.jpg" />
+                                        <div class="xzoom-thumbs">
+                                            <a href="assets/image/p1.jpg"><img class="xzoom-gallery" width="80" src="assets/image/p1.jpg"  xpreview="assets/image/p1.jpg" title="The description goes here"></a>
                                             
+                                            <a href="assets/image/p2.jpg"><img class="xzoom-gallery" width="80" src="assets/image/p2.jpg" title="The description goes here"></a>
+                                            
+                                            <a href="assets/image/p3.jpg"><img class="xzoom-gallery" width="80" src="assets/image/p3.jpg" title="The description goes here"></a>
+                                            
+                                            <a href="assets/image/p5.jpg"><img class="xzoom-gallery" width="80" src="assets/image/p5.jpg" title="The description goes here"></a>
                                         </div>
-                                        <div class="prod-info">
-                                            <div class="float-left">
-                                                <div class="sizeAndquantity">
-                                                    <div class="productSize">
-                                                        <span>Size</span>
-                                                        <select>
-                                                            <option value="1">small</option>
-                                                            <option value="2" selected="">XL</option>
-                                                            <option value="3">XXL</option>
-                                                            <option value="4">XXXL</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="productQuantity">
-                                                        <span>Quantity</span>
-                                                        <input class="item-quantity" type="number">
-                                                    </div>
-                                                </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="prod-info">
+                                    <div class="float-left">
+                                        <div class="sizeAndquantity">
+                                            <div class="productSize">
+                                                <span>Size</span>
+                                                <select>
+                                                    <option value="1">small</option>
+                                                    <option value="2" selected="">XL</option>
+                                                    <option value="3">XXL</option>
+                                                    <option value="4">XXXL</option>
+                                                </select>
                                             </div>
-                                            <div class="float-right">
-                                                <div class="price">CHF 95.00</div>
-                                                <div class="btn-add-to-cart">
-                                                    <span class="lodur-icon-cart-thin"></span>
-                                                </div>
-                                            </div>
-                                            <div class="productSpec">
-                                                <ul>
-                                                    <li>- Farbe: marineblau</li>
-                                                    <li>- Linker Ärmel: Aufgesetzte Kugelschreibertasche</li>
-                                                    <li>- Aufgesetzte Brusttaschen mit Patte</li>
-                                                    <li>- Rechts oberhalb Patte: Flauschband</li>
-                                                    <li>- Zwei schräg eingesetzte Bauchtaschen</li>
-                                                    <li>- Im Rückenteil zwei Bewegungsfalten</li>
-                                                    <li>- Rückenaufschrift 'FEUERWEHR', Schrifthöhe 6 cm</li>
-                                                    <li>- Brust und Rücken umlaufendes Reflexband</li>
-                                                    <li>- Schliessung mit verdecktem Reisverschluss </li>
-                                                </ul>
+                                            <div class="productQuantity">
+                                                <span>Quantity</span>
+                                                <input class="item-quantity" type="number">
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="float-right">
+                                        <div class="price">CHF 95.00</div>
+                                        <div class="btn-add-to-cart">
+                                            <span class="lodur-icon-cart-thin"></span>
+                                        </div>
+                                    </div>
+                                    <div class="productSpec">
+                                        <ul>
+                                            <li>- Farbe: marineblau</li>
+                                            <li>- Linker Ärmel: Aufgesetzte Kugelschreibertasche</li>
+                                            <li>- Aufgesetzte Brusttaschen mit Patte</li>
+                                            <li>- Rechts oberhalb Patte: Flauschband</li>
+                                            <li>- Zwei schräg eingesetzte Bauchtaschen</li>
+                                            <li>- Im Rückenteil zwei Bewegungsfalten</li>
+                                            <li>- Rückenaufschrift 'FEUERWEHR', Schrifthöhe 6 cm</li>
+                                            <li>- Brust und Rücken umlaufendes Reflexband</li>
+                                            <li>- Schliessung mit verdecktem Reisverschluss </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
+                            
                         </div>
+                        
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -385,43 +429,76 @@
 
     <script>
 
-        
         var imgArray = new Array(
-            'car-big-1.jpg',
-            'car-big-2.jpg',
-            'car-big-3.jpg',
-            'car-big-4.jpg',
+        'p1.jpg',
+        'p2.jpg',
+        'p3.jpg',
+        'p5.jpg',
         );
-        
+
+
+
+        let images = document.querySelectorAll("#thumbs img");
+            images.forEach(i => {
+            imgArray.push(i.src)
+        });
+
         var imgPath = "assets/image/";
-    
+
+        let timeOut = null;
+
         function swapImage(imgID) {
             var theImage = document.getElementById('theImage');
             var newImg;
             newImg = imgArray[imgID];
-            theImage.src = imgPath + newImg;
+            
+
+
+            theImage.style.opacity = "0";
+            clearTimeout(timeOut);
+            timeOut = setTimeout(function() {
+                theImage.src = imgPath + newImg;
+                theImage.style.opacity = "1";
+            }, 200);
         }
-        
-        function preloadImages() {		
-            for(var i = 0; i < imgArray.length; i++) {
+
+        $('#thumbs ul li').click(function() {
+          var gim = $(this).find('img').attr('src');
+          var i = $(this).index();
+          $('.xzoom-thumbs a').each(function() {
+              if($(this).index() == i) {
+                $(this).find('img').trigger('click');
+              }
+            })
+        })
+
+
+        function preloadImages() {
+            for (var i = 0; i < imgArray.length; i++) {
                 var tmpImg = new Image;
                 tmpImg.src = imgPath + imgArray[i];
             }
         }
 
+        (function(){
+ 
+            $("#cart").on("click", function() {
+                $(".shopping-cart").fadeToggle( "fast");
+            });
+            
+        })();
+
         
         $(document).ready(function(){
 
-            $("#selectedImage").find("ul li a").hover(
-                function(){ 
-                    $("a.active").addClass('inactive').removeClass('active');
-                },
-                function(){ 
-                    $("a.inactive").addClass('active').removeClass('inactive'); 
-                }
-            );
+            
+            $('#thumbs').on('mouseover', 'a', function() {
+                $('a.active').removeClass('active');
+                $(this).addClass('active');
+            });
+        
+        
 
-       
         // Image Gallery And Zoom
 
         (function ($) {
