@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zentrallager</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/desktop.css">
+    
+</head>
+<body onload="preloadImages()">
+
+    <div class="zentrallager">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="cartAnd-miniCart">
+                        <div class="float-right">
+                            <a href="#" id="cart"><span class="lodur-icon-cart-thin"></span> <span class="badge">(3)</span></a>
+                        </div>
+
+                        <div class="shopping-cart">
+                            <div class="shopping-cart-header">
+                                <span class="lodur-icon-cart-thin"></span><span class="badge">3</span>
+                                <div class="shopping-cart-total">
+                                <span class="lighter-text">Total:</span>
+                                <span class="main-color-text">$2,229.97</span>
+                                </div>
+                            </div> <!--end shopping-cart-header -->
+                        
+                            <ul class="shopping-cart-items">
+                                <li class="clearfix">
+                                <img src="assets/image/p5.jpg" alt="item1" />
+                                <span class="item-name">Sony DSC-RX100M III</span>
+                                <span class="item-price">$849.99</span>
+                                <span class="item-quantity">Quantity: 01</span>
+                                </li>
+                        
+                                <li class="clearfix">
+                                <img src="assets/image/p3.jpg" alt="item1" />
+                                <span class="item-name">KS Automatic Mechanic...</span>
+                                <span class="item-price">$1,249.99</span>
+                                <span class="item-quantity">Quantity: 01</span>
+                                </li>
+                        
+                                <li class="clearfix">
+                                <img src="assets/image/p1.jpg" alt="item1" />
+                                <span class="item-name">Kindle, 6" Glare-Free To...</span>
+                                <span class="item-price">$129.99</span>
+                                <span class="item-quantity">Quantity: 01</span>
+                                </li>
+                            </ul>
+                        
+                            <a href="#" class="button">Checkout</a>
+                            </div> <!--end shopping-cart -->
+                    </div>
+                </div>
+            </div>
+            <div id="selectedImage" class="row product-list">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="zen-product" data-toggle="modal" data-target="#exampleModal">    
+                        <div class="prod-img-container">
+                            <a href="#"><img class="img-fluid" src="assets/image/product.png" alt=""></a>
+                        </div>
+                        <div class="prod-info prod-info-onHover">
+                            <div class="float-left">
+                                <!-- <div class="discount-tag">-38%</div> -->
+                                <div class="prodName">naketano</div>
+                            </div>
+                            <div class="float-right">
+                                <!-- <div class="rate">CHF 154.00</div> -->
+                                <div class="price">CHF 95.00</div>
+                            </div>
+                            <div class="mouse-hover-info">
+                                <ul>
+                                    <li><a class="active" href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="zen-product" data-toggle="modal" data-target="#exampleModal">    
+                        <div class="prod-img-container">
+                            <a href="#"><img class="img-fluid" src="assets/image/product.png" alt=""></a>
+                        </div>
+                        <div class="prod-info prod-info-onHover">
+                            <div class="float-left">
+                                <!-- <div class="discount-tag">-38%</div> -->
+                                <div class="prodName">naketano</div>
+                            </div>
+                            <div class="float-right">
+                                <!-- <div class="rate">CHF 154.00</div> -->
+                                <div class="price">CHF 95.00</div>
+                            </div>
+                            <div class="mouse-hover-info">
+                                <ul>
+                                    <li><a class="active" href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="zen-product" data-toggle="modal" data-target="#exampleModal">
+                        <div id="image" class="prod-img-container">
+                            <a href="#"><img id="theImage" class="img-fluid" width="240" src="assets/image/p1.jpg" alt=""></a>
+                        </div>
+                        <div class="prod-info prod-info-onHover onHover-info">
+                            <div class="float-left">
+                                <!-- <div class="discount-tag">-38%</div> -->
+                                <div class="prodName">naketano</div>
+                            </div>
+                            <div class="float-right">
+                                <!-- <div class="rate">CHF 154.00</div> -->
+                                <div class="price">CHF 95.00</div>
+                            </div>
+                            <div id="thumbs" class="mouse-hover-info">
+                                <ul>
+                                    <li><a href="#" class="active"><img src="assets/image/p1.jpg" width="45" alt="Car 1" onmouseover="swapImage(0);"  /></a></li>
+                                    <li><a href="#"><img src="assets/image/p2.jpg" width="45" alt="Car 2" onmouseover="swapImage(1);"  /></a></li>
+                                    <li><a href="#"><img src="assets/image/p3.jpg" width="45" alt="Car 3" onmouseover="swapImage(2);"  /></a></li>
+                                    <li><a href="#"><img src="assets/image/p4.jpg" width="45" alt="Car 4" onmouseover="swapImage(3);"  /></a></li>
+                                    <li><a href="#"><img src="assets/image/p5.jpg" width="45" alt="Car 5" onmouseover="swapImage(4);"  /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="zen-product" data-toggle="modal" data-target="#exampleModal">
+                        <div class="prod-img-container">
+                            <a href="#"><img class="img-fluid" src="assets/image/product.png" alt=""></a>
+                        </div>
+                        <div class="prod-info prod-info-onHover onHover-info">
+                            <div class="float-left">
+                                <!-- <div class="discount-tag">-38%</div> -->
+                                <div class="prodName">naketano</div>
+                            </div>
+                            <div class="float-right">
+                                <!-- <div class="rate">CHF 154.00</div> -->
+                                <div class="price">CHF 95.00</div>
+                            </div>
+                            <div class="mouse-hover-info">
+                                <ul>
+                                    <li><a class="active" href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="zen-product" data-toggle="modal" data-target="#exampleModal">
+                        <div class="prod-img-container">
+                            <a href="#"><img class="img-fluid" src="assets/image/product.png" alt=""></a>
+                        </div>
+                        <div class="prod-info prod-info-onHover onHover-info">
+                            <div class="float-left">
+                                <!-- <div class="discount-tag">-38%</div> -->
+                                <div class="prodName">naketano</div>
+                            </div>
+                            <div class="float-right">
+                                <!-- <div class="rate">CHF 154.00</div> -->
+                                <div class="price">CHF 95.00</div>
+                            </div>
+                            <div class="mouse-hover-info">
+                                <ul>
+                                    <li><a class="active" href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="zen-product" data-toggle="modal" data-target="#exampleModal">
+                        <div class="prod-img-container">
+                            <a href="#"><img class="img-fluid" src="assets/image/product.png" alt=""></a>
+                        </div>
+                        <div class="prod-info prod-info-onHover onHover-info">
+                            <div class="float-left">
+                                <!-- <div class="discount-tag">-38%</div> -->
+                                <div class="prodName">naketano</div>
+                            </div>
+                            <div class="float-right">
+                                <!-- <div class="rate">CHF 154.00</div> -->
+                                <div class="price">CHF 95.00</div>
+                            </div>
+                            <div class="mouse-hover-info">
+                                <ul>
+                                    <li><a class="active" href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="zen-product" data-toggle="modal" data-target="#exampleModal">
+                        <div class="prod-img-container">
+                            <a href="#"><img class="img-fluid" src="assets/image/product.png" alt=""></a>
+                        </div>
+                        <div class="prod-info prod-info-onHover onHover-info">
+                            <div class="float-left">
+                                <!-- <div class="discount-tag">-38%</div> -->
+                                <div class="prodName">naketano</div>
+                            </div>
+                            <div class="float-right">
+                                <!-- <div class="rate">CHF 154.00</div> -->
+                                <div class="price">CHF 95.00</div>
+                            </div>
+                            <div class="mouse-hover-info">
+                                <ul>
+                                    <li><a class="active" href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="zen-product" data-toggle="modal" data-target="#exampleModal">
+                        <div class="prod-img-container">
+                            <a href="#"><img class="img-fluid" src="assets/image/product.png" alt=""></a>
+                        </div>
+                        <div class="prod-info prod-info-onHover onHover-info">
+                            <div class="float-left">
+                                <!-- <div class="discount-tag">-38%</div> -->
+                                <div class="prodName">naketano</div>
+                            </div>
+                            <div class="float-right">
+                                <!-- <div class="rate">CHF 154.00</div> -->
+                                <div class="price">CHF 95.00</div>
+                            </div>
+                            <div class="mouse-hover-info">
+                                <ul>
+                                    <li><a class="active" href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="zen-product" data-toggle="modal" data-target="#exampleModal">
+                        <div class="prod-img-container">
+                            <a href="#"><img class="img-fluid" src="assets/image/product.png" alt=""></a>
+                        </div>
+                        <div class="prod-info prod-info-onHover onHover-info">
+                            <div class="float-left">
+                                <!-- <div class="discount-tag">-38%</div> -->
+                                <div class="prodName">naketano</div>
+                            </div>
+                            <div class="float-right">
+                                <!-- <div class="rate">CHF 154.00</div> -->
+                                <div class="price">CHF 95.00</div>
+                            </div>
+                            <div class="mouse-hover-info">
+                                <ul>
+                                    <li><a class="active" href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="zen-product" data-toggle="modal" data-target="#exampleModal">
+                        <div class="prod-img-container">
+                            <a href="#"><img class="img-fluid" src="assets/image/product.png" alt=""></a>
+                        </div>
+                        <div class="prod-info prod-info-onHover onHover-info">
+                            <div class="float-left">
+                                <!-- <div class="discount-tag">-38%</div> -->
+                                <div class="prodName">naketano</div>
+                            </div>
+                            <div class="float-right">
+                                <!-- <div class="rate">CHF 154.00</div> -->
+                                <div class="price">CHF 95.00</div>
+                            </div>
+                            <div class="mouse-hover-info">
+                                <ul>
+                                    <li><a class="active" href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="zen-product" data-toggle="modal" data-target="#exampleModal">
+                        <div class="prod-img-container">
+                            <a href="#"><img class="img-fluid" src="assets/image/product.png" alt=""></a>
+                        </div>
+                        <div class="prod-info prod-info-onHover onHover-info">
+                            <div class="float-left">
+                                <!-- <div class="discount-tag">-38%</div> -->
+                                <div class="prodName">naketano</div>
+                            </div>
+                            <div class="float-right">
+                                <!-- <div class="rate">CHF 154.00</div> -->
+                                <div class="price">CHF 95.00</div>
+                            </div>
+                            <div class="mouse-hover-info">
+                                <ul>
+                                    <li><a class="active" href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="assets/image/prod-1.png" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+            
+            
+            
+        
+
+    <!-- Slide In Modal Right Start -->
+	<div class="modal right fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">naketano</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> -->
+                <div class="modal-body prodDetails-sidebar">
+            
+                    <div class="top-bar">
+                        
+                        <h1>naketano</h1>
+                        
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row product-details">
+                            <div class="col">
+                                <div class="prod-img-container">
+                                    <!-- <img class="img-fluid" src="assets/image/product.png" alt=""> -->
+                                    <div id="myCarousel" class="carousel slide xzoom-container" data-ride="carousel">
+                                        <img class="xzoom" id="xzoom-default" src="assets/image/p1.jpg" xoriginal="assets/image/p1.jpg" />
+                                        <div class="xzoom-thumbs carousel-inner" role="listbox">
+
+                                            <div class="carousel-item active">
+                                                <a href="assets/image/p1.jpg"><img class="xzoom-gallery" width="80" src="assets/image/p1.jpg"  xpreview="assets/image/p1.jpg" title="The description goes here"></a>
+                                            </div>
+                                            
+                                            <div class="carousel-item">
+                                                <a href="assets/image/p2.jpg"><img class="xzoom-gallery" width="80" src="assets/image/p2.jpg" title="The description goes here"></a>
+                                            </div>
+                                            
+                                            <div class="carousel-item">
+                                                <a href="assets/image/p3.jpg"><img class="xzoom-gallery" width="80" src="assets/image/p3.jpg" title="The description goes here"></a>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <a href="assets/image/p4.jpg"><img class="xzoom-gallery" width="80" src="assets/image/p4.jpg" title="The description goes here"></a>
+                                            </div>
+                                            
+                                            
+                                            <div class="carousel-item">
+                                                <a href="assets/image/p5.jpg"><img class="xzoom-gallery" width="80" src="assets/image/p5.jpg" title="The description goes here"></a>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        <div>
+                                            <a href="#myCarousel" role="button" data-slide="prev"><span class="lodur-icon-arrow-circle-left"></span></a>
+                                            <a href="#myCarousel" role="button" data-slide="next"><span class="lodur-icon-arrow-circle-right"></span></a>
+                                        </div>
+                                    </div>
+                                   
+                                    
+                                </div>
+                                <div class="prod-info">
+                                    <div class="float-left">
+                                        <div class="sizeAndquantity">
+                                            <div class="productSize">
+                                                <span>Size</span>
+                                                <select>
+                                                    <option value="1">small</option>
+                                                    <option value="2" selected="">XL</option>
+                                                    <option value="3">XXL</option>
+                                                    <option value="4">XXXL</option>
+                                                </select>
+                                            </div>
+                                            <div class="productQuantity">
+                                                <span>Quantity</span>
+                                                <input class="item-quantity" type="number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="float-right">
+                                        <div class="price">CHF 95.00</div>
+                                        <div class="btn-add-to-cart">
+                                            <span class="lodur-icon-cart-thin"></span>
+                                        </div>
+                                    </div>
+                                    <div class="productSpec">
+                                        <ul>
+                                            <li>- Farbe: marineblau</li>
+                                            <li>- Linker Ärmel: Aufgesetzte Kugelschreibertasche</li>
+                                            <li>- Aufgesetzte Brusttaschen mit Patte</li>
+                                            <li>- Rechts oberhalb Patte: Flauschband</li>
+                                            <li>- Zwei schräg eingesetzte Bauchtaschen</li>
+                                            <li>- Im Rückenteil zwei Bewegungsfalten</li>
+                                            <li>- Rückenaufschrift 'FEUERWEHR', Schrifthöhe 6 cm</li>
+                                            <li>- Brust und Rücken umlaufendes Reflexband</li>
+                                            <li>- Schliessung mit verdecktem Reisverschluss </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slide In Modal Right End-->
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <script src='https://code.jquery.com/jquery-2.1.1.js'></script>
+    <script src='https://unpkg.com/xzoom/dist/xzoom.min.js'></script>
+
+
+
+    <script>
+
+$.noConflict();
+
+    // Sidebar Thumbnail Carousel
+    $('#myCarousel').carousel({
+        interval: 100000000000000000
+    })
+
+    $('.carousel .carousel-item').each(function(){
+        var minPerSlide = 3;
+        var next = $(this).next();
+        if (!next.length) {
+        next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+        
+        for (var i=0;i<minPerSlide;i++) {
+            next=next.next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            
+            next.children(':first-child').clone().appendTo($(this));
+        }
+    });
+
+
+
+    jQuery("#cart").on("click", function() {
+        jQuery(".shopping-cart").fadeToggle( "fast");
+    });
+
+
+
+        var imgArray = new Array(
+        'p1.jpg',
+        'p2.jpg',
+        'p3.jpg',
+        'p4.jpg',
+        'p5.jpg',
+        );
+
+
+
+        let images = document.querySelectorAll("#thumbs img");
+            images.forEach(i => {
+            imgArray.push(i.src)
+        });
+
+        var imgPath = "assets/image/";
+
+        let timeOut = null;
+
+        function swapImage(imgID) {
+            var theImage = document.getElementById('theImage');
+            var newImg;
+            newImg = imgArray[imgID];
+            
+
+
+            theImage.style.opacity = "0";
+            clearTimeout(timeOut);
+            timeOut = setTimeout(function() {
+                theImage.src = imgPath + newImg;
+                theImage.style.opacity = "1";
+            }, 200);
+        }
+
+        $('#thumbs ul li').click(function() {
+          var gim = $(this).find('img').attr('src');
+          var i = $(this).index();
+          $('.xzoom-thumbs a').each(function() {
+              if($(this).index() == i) {
+                $(this).find('img').trigger('click');
+              }
+            })
+        })
+
+
+        function preloadImages() {
+            for (var i = 0; i < imgArray.length; i++) {
+                var tmpImg = new Image;
+                tmpImg.src = imgPath + imgArray[i];
+            }
+        }
+
+        
+        
+        $(document).ready(function(){
+
+            
+            $('#thumbs').on('mouseover', 'a', function() {
+                $('a.active').removeClass('active');
+                $(this).addClass('active');
+            });
+        
+        
+
+        // Image Gallery And Zoom
+
+        (function ($) {
+
+        $('.xzoom, .xzoom-gallery').xzoom({zoomWidth: 400, title: true, tint: '#333', Xoffset: 15});
+        $('.xzoom2, .xzoom-gallery2').xzoom({position: '#xzoom2-id', tint: '#ffa200'});
+        $('.xzoom3, .xzoom-gallery3').xzoom({position: 'lens', lensShape: 'circle', sourceClass: 'xzoom-hidden'});
+        $('.xzoom4, .xzoom-gallery4').xzoom({tint: '#006699', Xoffset: 15});
+        $('.xzoom5, .xzoom-gallery5').xzoom({tint: '#006699', Xoffset: 15});
+
+        //Integration with hammer.js
+        var isTouchSupported = 'ontouchstart' in window;
+
+        if (isTouchSupported) {
+            //If touch device
+            $('.xzoom, .xzoom2, .xzoom3, .xzoom4, .xzoom5').each(function(){
+                var xzoom = $(this).data('xzoom');
+                xzoom.eventunbind();
+            });
+            
+            $('.xzoom, .xzoom2, .xzoom3').each(function() {
+                var xzoom = $(this).data('xzoom');
+                $(this).hammer().on("tap", function(event) {
+                    event.pageX = event.gesture.center.pageX;
+                    event.pageY = event.gesture.center.pageY;
+                    var s = 1, ls;
+    
+                    xzoom.eventmove = function(element) {
+                        element.hammer().on('drag', function(event) {
+                            event.pageX = event.gesture.center.pageX;
+                            event.pageY = event.gesture.center.pageY;
+                            xzoom.movezoom(event);
+                            event.gesture.preventDefault();
+                        });
+                    }
+    
+                    xzoom.eventleave = function(element) {
+                        element.hammer().on('tap', function(event) {
+                            xzoom.closezoom();
+                        });
+                    }
+                    xzoom.openzoom(event);
+                });
+            });
+
+        $('.xzoom4').each(function() {
+            var xzoom = $(this).data('xzoom');
+            $(this).hammer().on("tap", function(event) {
+                event.pageX = event.gesture.center.pageX;
+                event.pageY = event.gesture.center.pageY;
+                var s = 1, ls;
+
+                xzoom.eventmove = function(element) {
+                    element.hammer().on('drag', function(event) {
+                        event.pageX = event.gesture.center.pageX;
+                        event.pageY = event.gesture.center.pageY;
+                        xzoom.movezoom(event);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                var counter = 0;
+                xzoom.eventclick = function(element) {
+                    element.hammer().on('tap', function() {
+                        counter++;
+                        if (counter == 1) setTimeout(openfancy,300);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                function openfancy() {
+                    if (counter == 2) {
+                        xzoom.closezoom();
+                        $.fancybox.open(xzoom.gallery().cgallery);
+                    } else {
+                        xzoom.closezoom();
+                    }
+                    counter = 0;
+                }
+            xzoom.openzoom(event);
+            });
+        });
+        
+        $('.xzoom5').each(function() {
+            var xzoom = $(this).data('xzoom');
+            $(this).hammer().on("tap", function(event) {
+                event.pageX = event.gesture.center.pageX;
+                event.pageY = event.gesture.center.pageY;
+                var s = 1, ls;
+
+                xzoom.eventmove = function(element) {
+                    element.hammer().on('drag', function(event) {
+                        event.pageX = event.gesture.center.pageX;
+                        event.pageY = event.gesture.center.pageY;
+                        xzoom.movezoom(event);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                var counter = 0;
+                xzoom.eventclick = function(element) {
+                    element.hammer().on('tap', function() {
+                        counter++;
+                        if (counter == 1) setTimeout(openmagnific,300);
+                        event.gesture.preventDefault();
+                    });
+                }
+
+                function openmagnific() {
+                    if (counter == 2) {
+                        xzoom.closezoom();
+                        var gallery = xzoom.gallery().cgallery;
+                        var i, images = new Array();
+                        for (i in gallery) {
+                            images[i] = {src: gallery[i]};
+                        }
+                        $.magnificPopup.open({items: images, type:'image', gallery: {enabled: true}});
+                    } else {
+                        xzoom.closezoom();
+                    }
+                    counter = 0;
+                }
+                xzoom.openzoom(event);
+            });
+        });
+
+        } else {
+            //If not touch device
+
+            //Integration with fancybox plugin
+            $('#xzoom-fancy').bind('click', function(event) {
+                var xzoom = $(this).data('xzoom');
+                xzoom.closezoom();
+                $.fancybox.open(xzoom.gallery().cgallery, {padding: 0, helpers: {overlay: {locked: false}}});
+                event.preventDefault();
+            });
+           
+            //Integration with magnific popup plugin
+            $('#xzoom-magnific').bind('click', function(event) {
+                var xzoom = $(this).data('xzoom');
+                xzoom.closezoom();
+                var gallery = xzoom.gallery().cgallery;
+                var i, images = new Array();
+                for (i in gallery) {
+                    images[i] = {src: gallery[i]};
+                }
+                $.magnificPopup.open({items: images, type:'image', gallery: {enabled: true}});
+                event.preventDefault();
+            });
+        }
+
+})(jQuery);
+
+            });
+    </script>
+
+</body>
+</html>
